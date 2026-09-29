@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: grandstay-hotel-booking
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /home.php
+    envVars:
+      - key: DB_PATH
+        value: /var/www/html/data/hotel_booking.sqlite
+      - key: MANAGER_USERNAME
+        value: manager1
+      - key: MANAGER_PASSWORD
+        value: manager123
+      - key: MANAGER_NAME
+        value: Hotel Manager
+      - key: MANAGER_EMAIL
+        value: manager@example.com
+      - key: MANAGER_PHONE
+        value: 0000000000

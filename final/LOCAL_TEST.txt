@@ -1,0 +1,19 @@
+HOTEL_BOOK - LOCAL PC TESTING (SQLite)
+
+Requirements:
+- PHP 8.2+
+- PDO SQLite extension enabled
+
+1. Extract the project folder.
+2. Open a terminal in the project folder.
+3. Run:
+   php -S localhost:8000
+4. Open:
+   http://localhost:8000/home.php
+
+The SQLite database is created automatically in:
+   data/hotel_booking.sqlite
+
+Manager test account:
+   Username: manager1
+   Password: manager123
